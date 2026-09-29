@@ -1,0 +1,179 @@
+province,division,district,town,lat,lon,supplier
+Punjab,Bahawalpur,Bahawalnagar,Bahawalnagar,29.998,73.253,MEPCO
+Punjab,Bahawalpur,Bahawalpur,Bahawalpur,29.398,71.675,MEPCO
+Punjab,Bahawalpur,Rahim Yar Khan,Rahim Yar Khan,28.420,70.303,MEPCO
+Punjab,Dera Ghazi Khan,Dera Ghazi Khan,Dera Ghazi Khan,30.046,70.640,MEPCO
+Punjab,Dera Ghazi Khan,Kot Addu,Kot Addu,30.469,70.967,MEPCO
+Punjab,Dera Ghazi Khan,Layyah,Layyah,30.961,70.939,MEPCO
+Punjab,Dera Ghazi Khan,Muzaffargarh,Muzaffargarh,30.073,71.194,MEPCO
+Punjab,Dera Ghazi Khan,Rajanpur,Rajanpur,29.104,70.330,MEPCO
+Punjab,Dera Ghazi Khan,Taunsa,Taunsa,30.704,70.651,MEPCO
+Punjab,Faisalabad,Chiniot,Chiniot,31.721,72.978,FESCO
+Punjab,Faisalabad,Faisalabad,Faisalabad,31.416,73.090,FESCO
+Punjab,Faisalabad,Jhang,Jhang,31.270,72.317,FESCO
+Punjab,Faisalabad,Toba Tek Singh,Toba Tek Singh,30.971,72.483,FESCO
+Punjab,Gujranwala,Gujranwala,Gujranwala,32.156,74.187,GEPCO
+Punjab,Gujranwala,Narowal,Narowal,32.102,74.873,GEPCO
+Punjab,Gujranwala,Sialkot,Sialkot,32.493,74.531,GEPCO
+Punjab,Gujrat,Gujrat,Gujrat,32.574,74.075,GEPCO
+Punjab,Gujrat,Hafizabad,Hafizabad,32.071,73.688,GEPCO
+Punjab,Gujrat,Mandi Bahauddin,Mandi Bahauddin,32.587,73.491,GEPCO
+Punjab,Gujrat,Wazirabad,Wazirabad,32.443,74.120,GEPCO
+Punjab,Lahore,Kasur,Kasur,31.119,74.450,LESCO
+Punjab,Lahore,Lahore,Lahore,31.558,74.351,LESCO
+Punjab,Lahore,Nankana Sahib,Nankana Sahib,31.450,73.707,LESCO
+Punjab,Lahore,Sheikhupura,Sheikhupura,31.713,73.986,LESCO
+Punjab,Multan,Khanewal,Khanewal,30.302,71.932,MEPCO
+Punjab,Multan,Lodhran,Lodhran,29.534,71.632,MEPCO
+Punjab,Multan,Multan,Multan,30.197,71.478,MEPCO
+Punjab,Multan,Vehari,Vehari,30.044,72.356,MEPCO
+Punjab,Rawalpindi,Attock,Attock,33.767,72.360,IESCO
+Punjab,Rawalpindi,Chakwal,Chakwal,32.933,72.854,IESCO
+Punjab,Rawalpindi,Jhelum,Jhelum,32.934,73.731,IESCO
+Punjab,Rawalpindi,Murree,Murree,33.908,73.390,IESCO
+Punjab,Rawalpindi,Rawalpindi,Rawalpindi,33.597,73.048,IESCO
+Punjab,Rawalpindi,Talagang,Talagang,32.928,72.416,IESCO
+Punjab,Sahiwal,Okara,Okara,30.810,73.452,LESCO
+Punjab,Sahiwal,Pakpattan,Pakpattan,30.343,73.389,MEPCO
+Punjab,Sahiwal,Sahiwal,Sahiwal,30.666,73.102,MEPCO
+Punjab,Sargodha,Bhakkar,Bhakkar,31.627,71.065,FESCO
+Punjab,Sargodha,Khushab,Jauharabad,32.290,72.282,FESCO
+Punjab,Sargodha,Mianwali,Mianwali,32.578,71.528,FESCO
+Punjab,Sargodha,Sargodha,Sargodha,32.086,72.674,FESCO
+Sindh,Hyderabad,Badin,Badin,24.656,68.837,HESCO
+Sindh,Hyderabad,Dadu,Dadu,26.730,67.777,SEPCO
+Sindh,Hyderabad,Hyderabad,Hyderabad,25.397,68.377,HESCO
+Sindh,Hyderabad,Jamshoro,Jamshoro,25.436,68.280,HESCO
+Sindh,Hyderabad,Matiari,Matiari,25.597,68.447,HESCO
+Sindh,Hyderabad,Sujawal,Sujawal,24.610,68.070,HESCO
+Sindh,Hyderabad,Tando Allahyar,Tando Allahyar,25.460,68.717,HESCO
+Sindh,Hyderabad,Tando Muhammad Khan,Tando Muhammad Khan,25.124,68.537,HESCO
+Sindh,Hyderabad,Thatta,Thatta,24.747,67.924,HESCO
+Sindh,Karachi,Karachi Central,Karachi,24.861,67.010,K-Electric
+Sindh,Karachi,Karachi East,Karachi,24.861,67.010,K-Electric
+Sindh,Karachi,Karachi South,Karachi,24.861,67.010,K-Electric
+Sindh,Karachi,Karachi West,Karachi,24.861,67.010,K-Electric
+Sindh,Karachi,Keamari,Keamari,24.850,66.950,K-Electric
+Sindh,Karachi,Korangi,Korangi,24.830,67.130,K-Electric
+Sindh,Karachi,Malir,Malir,24.950,67.200,K-Electric
+Sindh,Larkana,Jacobabad,Jacobabad,28.282,68.438,SEPCO
+Sindh,Larkana,Kashmore,Kashmore,28.433,69.584,SEPCO
+Sindh,Larkana,Larkana,Larkana,27.559,68.212,SEPCO
+Sindh,Larkana,Qambar Shahdadkot,Qambar,27.588,68.001,SEPCO
+Sindh,Larkana,Shikarpur,Shikarpur,27.956,68.638,SEPCO
+Sindh,Mirpur Khas,Mirpur Khas,Mirpur Khas,25.528,69.013,HESCO
+Sindh,Mirpur Khas,Tharparkar,Mithi,24.737,69.797,HESCO
+Sindh,Mirpur Khas,Umerkot,Umerkot,25.363,69.742,HESCO
+Sindh,Shaheed Benazirabad,Naushahro Feroze,Naushahro Feroze,26.840,68.123,SEPCO
+Sindh,Shaheed Benazirabad,Sanghar,Sanghar,26.047,68.949,HESCO
+Sindh,Shaheed Benazirabad,Shaheed Benazirabad,Nawabshah,26.239,68.404,HESCO
+Sindh,Sukkur,Ghotki,Ghotki,28.004,69.316,SEPCO
+Sindh,Sukkur,Khairpur,Khairpur,27.529,68.759,SEPCO
+Sindh,Sukkur,Sukkur,Sukkur,27.703,68.859,SEPCO
+Khyber Pakhtunkhwa,Bannu,Bannu,Bannu,32.985,70.604,PESCO
+Khyber Pakhtunkhwa,Bannu,Lakki Marwat,Lakki Marwat,32.607,70.912,PESCO
+Khyber Pakhtunkhwa,Bannu,North Waziristan,Miran Shah,33.001,70.071,TESCO
+Khyber Pakhtunkhwa,Dera Ismail Khan,Dera Ismail Khan,Dera Ismail Khan,31.831,70.902,PESCO
+Khyber Pakhtunkhwa,Dera Ismail Khan,Lower South Waziristan,Wana,32.299,69.573,TESCO
+Khyber Pakhtunkhwa,Dera Ismail Khan,Paharpur,Paharpur,32.105,70.971,PESCO
+Khyber Pakhtunkhwa,Dera Ismail Khan,Tank,Tank,32.217,70.383,PESCO
+Khyber Pakhtunkhwa,Dera Ismail Khan,Upper South Waziristan,Makin,32.630,69.850,TESCO
+Khyber Pakhtunkhwa,Hazara,Abbottabad,Abbottabad,34.146,73.212,HAZECO
+Khyber Pakhtunkhwa,Hazara,Allai,Banna,34.850,73.050,HAZECO
+Khyber Pakhtunkhwa,Hazara,Batagram,Battagram,34.677,73.023,HAZECO
+Khyber Pakhtunkhwa,Hazara,Haripur,Haripur,33.998,72.935,HAZECO
+Khyber Pakhtunkhwa,Hazara,Kolai-Palas,Palas,35.070,73.200,HAZECO
+Khyber Pakhtunkhwa,Hazara,Lower Kohistan,Pattan,35.030,72.940,HAZECO
+Khyber Pakhtunkhwa,Hazara,Mansehra,Mansehra,34.330,73.197,HAZECO
+Khyber Pakhtunkhwa,Hazara,Torghar,Judbah,34.550,72.830,HAZECO
+Khyber Pakhtunkhwa,Hazara,Upper Kohistan,Dasu,35.292,73.291,HAZECO
+Khyber Pakhtunkhwa,Kohat,Hangu,Hangu,33.532,71.059,PESCO
+Khyber Pakhtunkhwa,Kohat,Karak,Karak,33.116,71.094,PESCO
+Khyber Pakhtunkhwa,Kohat,Kohat,Kohat,33.582,71.449,PESCO
+Khyber Pakhtunkhwa,Kohat,Kurram,Parachinar,33.900,70.100,TESCO
+Khyber Pakhtunkhwa,Kohat,Orakzai,Kalaya,33.700,71.000,TESCO
+Khyber Pakhtunkhwa,Malakand,Bajaur,Khar,34.736,71.527,TESCO
+Khyber Pakhtunkhwa,Malakand,Buner,Daggar,34.511,72.484,PESCO
+Khyber Pakhtunkhwa,Malakand,Central Dir,Wari,35.030,71.800,PESCO
+Khyber Pakhtunkhwa,Malakand,Lower Chitral,Chitral,35.852,71.786,PESCO
+Khyber Pakhtunkhwa,Malakand,Lower Dir,Timargara,34.827,71.844,PESCO
+Khyber Pakhtunkhwa,Malakand,Malakand,Batkhela,34.618,71.972,PESCO
+Khyber Pakhtunkhwa,Malakand,Shangla,Alpuri,34.900,72.640,PESCO
+Khyber Pakhtunkhwa,Malakand,Swat,Saidu Sharif,34.747,72.356,PESCO
+Khyber Pakhtunkhwa,Malakand,Upper Chitral,Buni,36.273,72.259,PESCO
+Khyber Pakhtunkhwa,Malakand,Upper Dir,Dir,35.207,71.877,PESCO
+Khyber Pakhtunkhwa,Malakand,Upper Swat,Khwazakhela,34.940,72.470,PESCO
+Khyber Pakhtunkhwa,Mardan,Mardan,Mardan,34.198,72.050,PESCO
+Khyber Pakhtunkhwa,Mardan,Swabi,Swabi,34.120,72.470,PESCO
+Khyber Pakhtunkhwa,Peshawar,Charsadda,Charsadda,34.148,71.741,PESCO
+Khyber Pakhtunkhwa,Peshawar,Khyber,Landi Kotal,34.099,71.141,TESCO
+Khyber Pakhtunkhwa,Peshawar,Mohmand,Ghallanai,34.330,71.400,TESCO
+Khyber Pakhtunkhwa,Peshawar,Nowshera,Nowshera,34.016,71.981,PESCO
+Khyber Pakhtunkhwa,Peshawar,Peshawar,Peshawar,34.008,71.578,PESCO
+Balochistan,Khuzdar,Kalat,Kalat,29.027,66.594,QESCO
+Balochistan,Khuzdar,Khuzdar,Khuzdar,27.812,66.611,QESCO
+Balochistan,Khuzdar,Surab,Surab,28.493,66.260,QESCO
+Balochistan,Khuzdar,Wadh,Wadh,27.340,66.370,QESCO
+Balochistan,Koh-e-Sulaiman,Barkhan,Barkhan,29.898,69.526,QESCO
+Balochistan,Koh-e-Sulaiman,Kohlu,Kohlu,29.903,69.231,QESCO
+Balochistan,Koh-e-Sulaiman,Upper Dera Bugti,Pir Koh,29.200,69.300,QESCO
+Balochistan,Lasbela,Awaran,Awaran,26.457,65.231,QESCO
+Balochistan,Lasbela,Hub,Hub,25.026,66.885,K-Electric
+Balochistan,Lasbela,Lasbela,Uthal,25.807,66.622,K-Electric
+Balochistan,Loralai,Duki,Duki,30.153,68.573,QESCO
+Balochistan,Loralai,Loralai,Loralai,30.371,68.598,QESCO
+Balochistan,Loralai,Musakhail,Musa Khel Bazar,30.859,69.822,QESCO
+Balochistan,Loralai,Ziarat,Ziarat,30.382,67.726,QESCO
+Balochistan,Makran,Gwadar,Gwadar,25.122,62.325,QESCO
+Balochistan,Makran,Kech,Turbat,26.001,63.048,QESCO
+Balochistan,Makran,Panjgur,Panjgur,26.972,64.095,QESCO
+Balochistan,Makran,Tump,Tump,26.120,62.370,QESCO
+Balochistan,Naseerabad,Jaffarabad,Dera Allahyar,28.374,68.351,QESCO
+Balochistan,Naseerabad,Jhal Magsi,Gandava,28.613,67.486,QESCO
+Balochistan,Naseerabad,Nasirabad,Dera Murad Jamali,28.547,68.223,QESCO
+Balochistan,Naseerabad,Sohbatpur,Sohbatpur,28.520,68.543,QESCO
+Balochistan,Naseerabad,Usta Muhammad,Usta Muhammad,28.177,68.044,QESCO
+Balochistan,Pishin,Barshore,Barshore,30.850,67.300,QESCO
+Balochistan,Pishin,Chaman,Chaman,30.918,66.453,QESCO
+Balochistan,Pishin,Killa Abdullah,Qila Abdullah,30.728,66.661,QESCO
+Balochistan,Pishin,Pishin,Pishin,30.582,66.994,QESCO
+Balochistan,Quetta,Mastung,Mastung,29.800,66.846,QESCO
+Balochistan,Quetta,Quetta East,Quetta,30.184,67.001,QESCO
+Balochistan,Quetta,Quetta West,Quetta,30.184,67.001,QESCO
+Balochistan,Rakhshan,Chagai,Dalbandin,28.888,64.406,QESCO
+Balochistan,Rakhshan,Kharan,Kharan,28.585,65.415,QESCO
+Balochistan,Rakhshan,Nushki,Nushki,29.552,66.023,QESCO
+Balochistan,Rakhshan,Taftan,Taftan,28.947,61.587,QESCO
+Balochistan,Rakhshan,Washuk,Washuk,27.727,64.810,QESCO
+Balochistan,Sibi,Dera Bugti,Dera Bugti,29.036,69.158,QESCO
+Balochistan,Sibi,Harnai,Harnai,30.101,67.938,QESCO
+Balochistan,Sibi,Kachhi,Dhadar,29.475,67.652,QESCO
+Balochistan,Sibi,Sibi,Sibi,29.543,67.877,QESCO
+Balochistan,Zhob,Killa Saifullah,Qila Saifullah,30.701,68.360,QESCO
+Balochistan,Zhob,Sherani,Mani Khwa,31.500,69.900,QESCO
+Balochistan,Zhob,Zhob,Zhob,31.341,69.449,QESCO
+Islamabad Capital Territory,Islamabad,Islamabad,Islamabad,33.721,73.043,IESCO
+Gilgit-Baltistan,Baltistan,Ghanche,Khaplu,35.162,76.334,GB Power
+Gilgit-Baltistan,Baltistan,Kharmang,Tolti,35.028,76.092,GB Power
+Gilgit-Baltistan,Baltistan,Roundu,Dambudas,35.598,75.225,GB Power
+Gilgit-Baltistan,Baltistan,Shigar,Shigar,35.424,75.739,GB Power
+Gilgit-Baltistan,Baltistan,Skardu,Skardu,35.298,75.634,GB Power
+Gilgit-Baltistan,Diamer,Astore,Eidgah,35.347,74.856,GB Power
+Gilgit-Baltistan,Diamer,Darel,Darel,35.620,73.470,GB Power
+Gilgit-Baltistan,Diamer,Diamer,Chilas,35.413,74.104,GB Power
+Gilgit-Baltistan,Diamer,Tangir,Tangir,35.660,73.330,GB Power
+Gilgit-Baltistan,Gilgit,Ghizer,Gahkuch,36.177,73.764,GB Power
+Gilgit-Baltistan,Gilgit,Gilgit,Gilgit,35.919,74.312,GB Power
+Gilgit-Baltistan,Gilgit,Gupis-Yasin,Gupis,36.230,73.450,GB Power
+Gilgit-Baltistan,Gilgit,Hunza,Aliabad,36.307,74.615,GB Power
+Gilgit-Baltistan,Gilgit,Nagar,Nagar,36.275,74.720,GB Power
+Azad Kashmir,Mirpur,Bhimber,Bhimber,32.975,74.078,AJK Power
+Azad Kashmir,Mirpur,Kotli,Kotli,33.518,73.902,AJK Power
+Azad Kashmir,Mirpur,Mirpur,Mirpur,33.148,73.752,AJK Power
+Azad Kashmir,Muzaffarabad,Hattian Bala,Hattian Bala,34.169,73.743,AJK Power
+Azad Kashmir,Muzaffarabad,Muzaffarabad,Muzaffarabad,34.370,73.471,AJK Power
+Azad Kashmir,Muzaffarabad,Neelum,Athmuqam,34.589,73.913,AJK Power
+Azad Kashmir,Poonch,Bagh,Bagh,33.981,73.776,AJK Power
+Azad Kashmir,Poonch,Haveli,Forward Kahuta,33.870,74.100,AJK Power
+Azad Kashmir,Poonch,Poonch,Rawalakot,33.858,73.760,AJK Power
+Azad Kashmir,Poonch,Sudhnoti,Pallandri,33.715,73.684,AJK Power

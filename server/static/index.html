@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rooftop Solar Planner</title>
+  <link rel="icon" href="/static/favicon.svg">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><img src="/static/favicon.svg" alt="" width="26" height="26"> Rooftop Solar Planner</div>
+    <nav class="tabs">
+      <button class="tab active" data-tab="plan">Daily plan</button>
+      <button class="tab" data-tab="year">Yearly savings</button>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <aside class="settings">
+      <h2>Your home</h2>
+      <label>Find your district or town
+        <input id="search" list="place-list" placeholder="e.g. Multan, Nawabshah, Skardu" autocomplete="off">
+        <datalist id="place-list"></datalist>
+      </label>
+      <label>Province <select id="province"></select></label>
+      <label>Division <select id="division"></select></label>
+      <label>District <select id="district"></select></label>
+      <button id="use-location" class="link" type="button">Use my exact location</button>
+      <p id="place-note" class="hint"></p>
+
+      <h3>Solar</h3>
+      <div class="row">
+        <label>Panels (kW) <input id="pv_kw" type="number" min="1" max="100" step="0.5" value="10"></label>
+        <label>Inverter (kW) <input id="inverter_kw" type="number" min="1" max="100" step="0.5" value="10"></label>
+      </div>
+      <div class="row">
+        <label>Tilt (°) <input id="tilt" type="number" min="0" max="90" value="25"></label>
+        <label>Facing (°) <input id="azimuth" type="number" min="0" max="360" value="180" title="180 = south"></label>
+      </div>
+
+      <h3>Battery</h3>
+      <div class="row">
+        <label>Size (kWh) <input id="battery_kwh" type="number" min="0" max="200" step="0.5" value="10"></label>
+        <label>Charge now (%) <input id="battery_now" type="number" min="0" max="100" value="50"></label>
+      </div>
+      <label>Keep for load-shedding (%) <input id="reserve" type="number" min="0" max="80" value="0"></label>
+
+      <h3>Electricity</h3>
+      <label>Supplier <select id="supplier"></select></label>
+      <label id="rate-row" hidden>Price per unit (Rs) <input id="rate" type="number" min="1" max="200" step="0.5"></label>
+      <label id="export-row">Selling solar to the grid
+        <select id="export">
+          <option value="net_billing">Net billing, Rs 8.13 per unit (new, 2026)</option>
+          <option value="net_metering_legacy">Old net metering, Rs 25.32 per unit</option>
+        </select>
+      </label>
+      <p id="tariff-hint" class="hint"></p>
+
+      <h3>Household</h3>
+      <label>Air conditioners <input id="acs" type="number" min="0" max="10" value="2"></label>
+
+      <h3>Flexible jobs <span class="hint">the planner may move these</span></h3>
+      <div id="tasks"></div>
+      <button id="add-task" class="link">+ Add a job</button>
+    </aside>
+
+    <main>
+      <section id="tab-plan" class="tab-page">
+        <div class="toolbar">
+          <div class="seg">
+            <button id="src-tomorrow" class="seg-btn active" title="Live weather forecast">Tomorrow</button>
+            <button id="src-now" class="seg-btn" title="Live weather forecast, from this hour">Next 24 hours</button>
+            <button id="src-replay" class="seg-btn" title="The weather that actually happened on a past day">A past day</button>
+          </div>
+          <input id="date" type="date">
+          <button id="make-plan" class="primary">Make the plan</button>
+          <span id="plan-status" class="muted"></span>
+        </div>
+
+        <div id="plan-empty" class="empty">Pick your district and set up your home on the left, then press <b>Make the plan</b>.<br>The plan uses the live weather forecast for your area; you can also replay any past day since 2018.</div>
+        <div id="plan" hidden>
+          <p id="source" class="muted small"></p>
+          <div class="cards">
+            <div class="card accent"><div class="label">Expected cost</div><div class="value" id="c-cost"></div><div class="sub" id="c-save"></div></div>
+            <div class="card"><div class="label">Solar</div><div class="value" id="c-solar"></div><div class="sub" id="c-self"></div></div>
+            <div class="card"><div class="label">Peak hours</div><div class="value" id="c-peak"></div><div class="sub">grid power costs the most</div></div>
+            <div class="card"><div class="label" id="c-batt-label">Battery at midnight</div><div class="value" id="c-batt"></div><div class="sub" id="c-batt-sub"></div></div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-head"><h3>Hour by hour</h3><div class="legend-inline" id="chart-legend"></div></div>
+            <div class="chart-box"><canvas id="day-chart"></canvas></div>
+            <div class="modes" id="modes"></div>
+            <div class="mode-legend" id="mode-legend"></div>
+          </div>
+
+          <div class="split">
+            <div class="panel">
+              <h3>The plan</h3>
+              <ol id="instructions" class="steps"></ol>
+            </div>
+            <div class="panel">
+              <h3>Flexible jobs</h3>
+              <div id="jobs"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tab-year" class="tab-page" hidden>
+        <div class="toolbar">
+          <label class="inline">Year <select id="year"></select></label>
+          <button id="run-year" class="primary">Simulate the year</button>
+          <span id="year-status" class="muted"></span>
+        </div>
+        <div class="progress" id="year-progress" hidden><div></div></div>
+        <div id="year-empty" class="empty">
+          Simulates every hour of a real year for your home, five ways: no solar, solar only, solar with a battery in
+          the standard inverter mode, this planner (forecasts only, no peeking at the future) and the planner with
+          perfect forecasts. Takes about a minute. The first time for a district, its weather history is downloaded
+          (a few seconds).
+        </div>
+        <div id="year-results" hidden>
+          <div class="cards">
+            <div class="card accent"><div class="label">Planner saves per year</div><div class="value" id="y-save"></div><div class="sub" id="y-save-sub"></div></div>
+            <div class="card"><div class="label">Bill with the planner</div><div class="value" id="y-bill"></div><div class="sub" id="y-bill-sub"></div></div>
+            <div class="card"><div class="label">Solar alone saves</div><div class="value" id="y-solar"></div><div class="sub">compared with no solar</div></div>
+            <div class="card"><div class="label">Of the best possible</div><div class="value" id="y-captured"></div><div class="sub">with perfect forecasts</div></div>
+          </div>
+          <div class="panel">
+            <h3>Every strategy</h3>
+            <table class="table" id="year-table"></table>
+            <p class="hint">Bills include 18% GST and the fixed monthly charge. Battery wear is priced at Rs 4.5 per kWh in and out.</p>
+          </div>
+          <div class="panel">
+            <h3>Energy cost by month</h3>
+            <div class="chart-box short"><canvas id="month-chart"></canvas></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="/static/vendor/chart.umd.min.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>
